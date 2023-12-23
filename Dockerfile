@@ -52,7 +52,7 @@ RUN find ${TARGET} -type f -name '*.html' | grep -vE "v[0-9]+\." | while read i;
 # BUILD OF MASTER DOCS IS NOW DONE!
 
 # Reset to alpine so we don't get any docs source or extra apps
-FROM nginx:alpine
+FROM nginx:1.25.3-alpine3.18
 
 # Set the target again
 ENV TARGET=/usr/share/nginx/html
