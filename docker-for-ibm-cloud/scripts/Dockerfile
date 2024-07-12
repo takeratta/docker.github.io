@@ -4,7 +4,7 @@
 # Example Dockerfile for an IBM Watson Conversation service deployed to a Docker for IBM Cloud swarm.
 
 # Standard Ubuntu Container
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20210416
 
 # Updates and Package Installs
 RUN apt-get update
