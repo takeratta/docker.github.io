@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM ubuntu:trusty-20190425
 
 RUN apt-get update && \
 	DEBIAN_FRONTEND=noninteractive apt-get install -yq ruby ruby-dev build-essential git awscli && \
